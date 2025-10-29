@@ -1,2 +1,13 @@
 pip install grpcio grpcio-tools
 python -m grpc_tools.protoc -I=proto --python_out=. --grpc_python_out=. proto/quiz.proto
+
+
+for javascript: run inside server folder
+npm init -y
+npm install @grpc/grpc-js @grpc/proto-loader
+
+
+python -m grpc_tools.protoc -I=proto --python_out=. --grpc_python_out=. proto/quiz.proto
+
+node server/server.js
+python client/client.py
